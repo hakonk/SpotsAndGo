@@ -16,6 +16,7 @@ enum RequestResult<T> {
 struct WebService {
     enum WebServiceError: Error {
         case malformedUrl
+        case noData
         case failedRequest(statusCode: Int)
     }
     let url: String
@@ -28,9 +29,13 @@ struct WebService {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
             guard
-                (200...399).contains(statusCode),
-                let data = data else {
+                (200...399).contains(statusCode)
+                else {
                 let error = WebServiceError.failedRequest(statusCode: statusCode)
+                return completion(.failure(error))
+            }
+            guard let data = data else {
+                let error = WebServiceError.noData
                 return completion(.failure(error))
             }
             DispatchQueue.global(qos: .userInitiated).async {
