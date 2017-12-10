@@ -13,7 +13,7 @@
 		A9075D181FDD979C00F3193B /* Spots.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9075D111FDD8F7F00F3193B /* Spots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9075D1C1FDDA01400F3193B /* SpotsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9075D1B1FDDA01400F3193B /* SpotsConfigurator.swift */; };
 		A9075D1F1FDDA07500F3193B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9075D1E1FDDA07500F3193B /* WebService.swift */; };
-		A9075D221FDDAB1A00F3193B /* StopsComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9075D211FDDAB1A00F3193B /* StopsComponentModel.swift */; };
+		A9075D221FDDAB1A00F3193B /* StopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9075D211FDDAB1A00F3193B /* StopsModel.swift */; };
 		A96D8CBB1FDD830800EBF7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96D8CBA1FDD830800EBF7DF /* AppDelegate.swift */; };
 		A96D8CBD1FDD830800EBF7DF /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96D8CBC1FDD830800EBF7DF /* StopsViewController.swift */; };
 		A96D8CC21FDD830800EBF7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96D8CC11FDD830800EBF7DF /* Assets.xcassets */; };
@@ -58,7 +58,7 @@
 		A9075D111FDD8F7F00F3193B /* Spots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spots.framework; path = Carthage/Build/iOS/Spots.framework; sourceTree = "<group>"; };
 		A9075D1B1FDDA01400F3193B /* SpotsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpotsConfigurator.swift; path = SpotsDemo/SpotsUtils/SpotsConfigurator.swift; sourceTree = SOURCE_ROOT; };
 		A9075D1E1FDDA07500F3193B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		A9075D211FDDAB1A00F3193B /* StopsComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsComponentModel.swift; sourceTree = "<group>"; };
+		A9075D211FDDAB1A00F3193B /* StopsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsModel.swift; sourceTree = "<group>"; };
 		A96D8CB71FDD830800EBF7DF /* SpotsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96D8CBA1FDD830800EBF7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A96D8CBC1FDD830800EBF7DF /* StopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		A9075D201FDDAB0E00F3193B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A9075D211FDDAB1A00F3193B /* StopsComponentModel.swift */,
+				A9075D211FDDAB1A00F3193B /* StopsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96D8CBD1FDD830800EBF7DF /* StopsViewController.swift in Sources */,
-				A9075D221FDDAB1A00F3193B /* StopsComponentModel.swift in Sources */,
+				A9075D221FDDAB1A00F3193B /* StopsModel.swift in Sources */,
 				A96D8CBB1FDD830800EBF7DF /* AppDelegate.swift in Sources */,
 				A9075D1F1FDDA07500F3193B /* WebService.swift in Sources */,
 				A9075D1C1FDDA01400F3193B /* SpotsConfigurator.swift in Sources */,

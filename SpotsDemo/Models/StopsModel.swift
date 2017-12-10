@@ -8,11 +8,12 @@
 
 import Foundation
 import UIKit
+import Spots
 
-struct StopsComponentModel: Codable {
+struct StopsModel: Codable {
     struct Layout: Codable {
-        let itemSpacing: CGFloat
-        let span: CGFloat
+        let itemSpacing: Double
+        let span: Double
     }
     struct Stop: Codable {
         let name: String

@@ -9,17 +9,12 @@
 import Spots
 
 enum ViewIdentifier: String {
-    case stopsList
+    case stopView
 }
 
 final class SpotsConfigurator {
+
     func configure() {
-
-//        Configuration.shared.register(presenter: Presenter<CoverPageInfoView, CoverInfo>(identifier: ViewIdentifier.coverPageInfo.rawValue) { (view, model, _) in
-//
-//            return .init(width: 960, height: 360)
-//        })
-
-
+        
     }
 }
