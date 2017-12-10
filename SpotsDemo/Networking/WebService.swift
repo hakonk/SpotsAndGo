@@ -40,7 +40,9 @@ struct WebService {
             }
             DispatchQueue.global(qos: .userInitiated).async {
                 let result = self.map(data: data, to: Mappable.self)
-                completion(result)
+                DispatchQueue.main.async {
+                    completion(result)
+                }
             }
         }
         task.resume()
